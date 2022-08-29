@@ -12,12 +12,14 @@
       <h1>Quiz App</h1>
     </header>
     <section class="personal-information">
-      <figure>
-        <h2>Insert Random Name</h2>
-        <img src="xxx" alt="That's you" />
+      <figure class="personal-information--profile">
+        <h2 class="profile-name">Insert Random Name</h2>
+        <img src="./Images/house.svg" alt="That's you" />
       </figure>
+    </section>
+    <section class="about-me">
       <h3>About me</h3>
-      <p>
+      <article>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -26,26 +28,26 @@
         molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
         eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
         zzril delenit a
-      </p>
+      </article>
     </section>
     <section class="counter">
       <div class="counter--created-questions">
-        <img src="xxx" />
+        <img aria-label="Created Questions" src="./Images/user.svg" />
         <p>Random Number</p>
       </div>
       <div class="counter--bookmarks">
-        <img src="xxx" />
+        <img aria-label="Bookmark Counter" src="./Images/user.svg" />
         <p>Random Number</p>
       </div>
     </section>
     <section class="settings">
-      <p>Settings</p>
+      <h4>Settings</h4>
     </section>
     <section class="darkmode">
-      <p>Dark Mode</p>
-      <label class="darkmode--switch">
+      <h4>Dark Mode</h4>
+      <label aria-label="switch-button" class="darkmode--switch">
         <input type="darkmode--checkbox" />
-        <span class="slider round"> </span>
+        <span class="darkmode--slider--round"> </span>
       </label>
     </section>
     <footer>

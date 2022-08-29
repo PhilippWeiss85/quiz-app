@@ -40,6 +40,10 @@ h2 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -66,9 +70,65 @@ button:active {
 
 .personal-information--profile {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row-reverse;
+  margin: 20px;
+}
+
+.about-me,
+.counter,
+.settings,
+.darkmode {
+  margin: 20px;
+}
+
+.about-me {
+  max-width: 600px;
+  border-left: double 4px black;
+  border-bottom: double 4px black;
+  padding: 5px;
+  background-color: rgba(360, 360, 360, 0.3);
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter--created-questions {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 20px;
+  background-color: lightcyan;
+  border-radius: 10px;
+}
+
+.counter--bookmarks {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 20px;
+  background-color: lightcyan;
+  border-radius: 10px;
+}
+
+.settings {
+  padding-top: 50px;
+}
+
+.darkmode {
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50%;
+  align-items: center;
 }
 
 .darkmode--switch {
@@ -91,7 +151,7 @@ button:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: grey;
+  background-color: lightblue;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -168,7 +228,8 @@ img {
 .tag {
   background-color: lightgray;
   border-radius: 1em;
-  padding: 0.2em;
+  padding: 0.52em;
+  width: auto;
 }
 
 .navbar {
