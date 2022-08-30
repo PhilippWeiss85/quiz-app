@@ -7,36 +7,36 @@
     <link href="./style.css" rel="stylesheet" />
     <title>My Quiz App</title>
   </head>
-  <body id="home">
+  <body>
     <header>
       <h1>Quappp</h1>
     </header>
     <main>
       <section class="quiz-card">
         <img
-          class="quiz-card--bookmark"
+          class="quiz-card__bookmark"
           src="./Images/bookmark.svg"
-          alt="quiz-card--bookmark"
+          alt="Bookmark this Question"
         />
         <h2>What property flips the axes in flexbox?</h2>
         <button>Show answer</button>
-        <ul class="quiz-card--tags">
-          <li class="tag html">#html</li>
-          <li class="tag flexbox">#flexbox</li>
-          <li class="tag html">#css</li>
+        <ul class="quiz-card__list">
+          <li class="quiz-card__tag">#html</li>
+          <li class="quiz-card__tag">#flexbox</li>
+          <li class="quiz-card__tag">#css</li>
         </ul>
       </section>
       <section class="quiz-card">
         <img
-          class="quiz-card--bookmark"
+          class="quiz-card__bookmark"
           src="./Images/bookmark-solid .svg"
-          alt="quiz-card--bookmark"
+          alt="Bookmark this Question"
         />
         <h2>What property flips the axes in flexbox?</h2>
         <button>Show answer</button>
-        <ul class="quiz-card--tags">
-          <li class="tag html">#html</li>
-          <li class="tag flexbox">#flexbox</li>
+        <ul class="quiz-card__list">
+          <li class="quiz-card__tag">#html</li>
+          <li class="quiz-card__tag">#flexbox</li>
           <li class="tag html">#css</li>
         </ul>
       </section>
@@ -86,17 +86,17 @@
     <footer>
       <nav>
         <ul class="navbar">
-          <li id="footer--home" class="footer--home">
+          <li class="navbar__item navbar__item--active">
             <a href="./index.html"
               ><img src="./Images/house.svg" alt="home"
             /></a>
           </li>
-          <li id="footer--bookmark" class="footer--bookmark">
+          <li class="navbar__item">
             <a href="./bookmarks.html"
               ><img src="./Images/bookmark.svg" alt="bookmarks"
             /></a>
           </li>
-          <li id="footer--profile" class="footer--profile">
+          <li class="navbar__item">
             <a href="./profile.html"
               ><img src="./Images/user.svg" alt="profile"
             /></a>
