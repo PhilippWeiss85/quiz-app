@@ -274,17 +274,17 @@ li {
   background-color: darkcyan;
 }
 
-#home #footer--home {
+.home .footer--home {
   background-color: darkcyan;
   opacity: 1.2;
 }
 
-#bookmark #footer--bookmark {
+.bookmark .footer--bookmark {
   background-color: darkcyan;
   opacity: 1.2;
 }
 
-#profile #footer--profile {
+.profile .footer--profile {
   background-color: darkcyan;
   opacity: 1.2;
 }

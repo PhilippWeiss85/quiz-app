@@ -7,42 +7,37 @@
     <link href="./style.css" rel="stylesheet" />
     <title>My Quiz App Bookmarks</title>
   </head>
-  <body id="bookmark">
+  <body>
     <header>
       <h1>Quapp</h1>
     </header>
     <main>
       <section class="quiz-card">
         <img
-          class="quiz-card--bookmark"
+          class="quiz-card__bookmark"
           src="./Images/bookmark-solid .svg"
-          alt="quiz-card--bookmark"
+          alt="Bookmark this Question"
         />
         <h2>What property flips the axes in flexbox?</h2>
         <button>Show answer</button>
-        <ul class="quiz-card--tags">
-          <li class="tag html">#html</li>
-          <li class="tag flexbox">#flexbox</li>
-          <li class="tag html">#css</li>
+        <ul class="quiz-card__list">
+          <li class="quiz-card__tag">#html</li>
+          <li class="quiz-card__tag">#flexbox</li>
+          <li class="quiz-card__tag">#css</li>
         </ul>
       </section>
     </main>
     <footer>
-      <nav>
-        <ul class="navbar">
-          <li id="footer--home" class="footer--home">
-            <a href="./index.html"
-              ><img src="./Images/house.svg" alt="home"
+      <nav class="navbar">
+            <a class="navbar__item"
+            href="./index.html"
+              ><img src="./Images/house.svg" alt="Home"
             /></a>
-          </li>
-          <li id="footer--bookmark" class="footer--bookmark">
-            <a href="./bookmarks.html"
-              ><img src="./Images/bookmark.svg" alt="bookmarks"
+            <a href="./bookmarks.html" class="navbar__item navbar__item--active"
+              ><img src="./Images/bookmark.svg" alt="Bookmarks"
             /></a>
-          </li>
-          <li id="footer--profile" class="footer--profile">
-            <a href="./profile.html"
-              ><img src="./Images/user.svg" alt="profile"
+            <a href="./profile.html" class="navbar__item"
+              ><img src="./Images/user.svg" alt="Profile"
             /></a>
           </li>
         </ul>
