@@ -246,6 +246,7 @@ img {
   max-height: 200px;
   gap: 1em;
   padding: 15px;
+  z-index: 20;
 }
 
 ul {
