@@ -7,22 +7,8 @@
 body {
   width: 100%;
   background: linear-gradient(90deg, #e66465, #9198e5);
-  height: 100%;
-}
-
-#index #indexnav {
-  background-color: lightblue;
-  opacity: 1.2;
-}
-
-#bookmark #bookmarknav {
-  background-color: lightblue;
-  opacity: 1.2;
-}
-
-#profile #profilenav {
-  background-color: lightblue;
-  opacity: 1.2;
+  min-height: 100%;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -76,6 +62,11 @@ button:active {
   margin: 20px;
 }
 
+.personal-information--usericon {
+  height: 6em;
+  width: 50%;
+}
+
 .about-me,
 .counter,
 .settings,
@@ -84,11 +75,16 @@ button:active {
 }
 
 .about-me {
-  max-width: 600px;
   border-left: double 4px black;
   border-bottom: double 4px black;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(360, 360, 360, 0.3);
+  width: 75%;
+  margin: auto;
+}
+
+.about-me--headline {
+  padding-bottom: 15px;
 }
 
 .counter {
@@ -107,6 +103,7 @@ button:active {
   gap: 20px;
   background-color: lightcyan;
   border-radius: 10px;
+  align-items: center;
 }
 
 .counter--bookmarks {
@@ -117,10 +114,13 @@ button:active {
   gap: 20px;
   background-color: lightcyan;
   border-radius: 10px;
+  align-items: center;
 }
 
 .settings {
   padding-top: 50px;
+  width: 70%;
+  margin: auto;
 }
 
 .darkmode {
@@ -129,6 +129,8 @@ button:active {
   justify-content: flex-start;
   gap: 50%;
   align-items: center;
+  width: 70%;
+  margin: auto;
 }
 
 .darkmode--switch {
@@ -234,15 +236,16 @@ img {
 
 .navbar {
   position: fixed;
+  background: linear-gradient(90deg, #e66465, #9198e5);
   width: 100%;
   bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-top: 3px solid black;
-  padding: 5%;
-  max-height: 15rem;
+  max-height: 200px;
   gap: 1em;
+  padding: 15px;
 }
 
 ul {
@@ -250,35 +253,37 @@ ul {
 }
 
 li {
-  padding: 5%;
+  padding: 1%;
   opacity: 0.7;
-  max-height: 10rem;
-  width: 200px;
+  width: 80px;
   display: flex;
   justify-content: center;
   border-radius: 10px;
 }
 
-.footer--profile:hover {
-  background-color: lightblue;
-}
-
-.footer--profile:active {
-  background-color: lightblue;
-}
-
-.footer--bookmark:hover {
-  background-color: lightblue;
-}
-
-.footer--bookmark:active {
-  background-color: lightblue;
-}
-
+.footer--profile:hover,
+.footer--bookmark:hover,
 .footer--home:hover {
-  background-color: lightblue;
+  background-color: darkcyan;
 }
 
+.footer--profile:active,
+.footer--bookmark:active,
 .footer--home:active {
-  background-color: lightblue;
+  background-color: darkcyan;
+}
+
+#home #footer--home {
+  background-color: darkcyan;
+  opacity: 1.2;
+}
+
+#bookmark #footer--bookmark {
+  background-color: darkcyan;
+  opacity: 1.2;
+}
+
+#profile #footer--profile {
+  background-color: darkcyan;
+  opacity: 1.2;
 }
