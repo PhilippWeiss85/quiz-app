@@ -1,0 +1,233 @@
+@import url(./Components/card.css);
+@import url(./Components/button.css);
+@import url(./Components/navbar.css);
+@import url(./Components/darkmodeswitch.css);
+
+/* baloo-paaji-2-regular - latin */
+@font-face {
+  font-family: "Baloo Paaji 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/baloo-paaji-2-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/baloo-paaji-2-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/baloo-paaji-2-v20-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/fonts/baloo-paaji-2-v20-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/baloo-paaji-2-v20-latin-regular.svg#BalooPaaji2")
+      format("svg"); /* Legacy iOS */
+}
+/* baloo-paaji-2-500 - latin */
+@font-face {
+  font-family: "Baloo Paaji 2";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/baloo-paaji-2-v20-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/baloo-paaji-2-v20-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/baloo-paaji-2-v20-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/baloo-paaji-2-v20-latin-500.svg#BalooPaaji2") format("svg"); /* Legacy iOS */
+}
+/* baloo-paaji-2-600 - latin */
+@font-face {
+  font-family: "Baloo Paaji 2";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/baloo-paaji-2-v20-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/baloo-paaji-2-v20-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/baloo-paaji-2-v20-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/baloo-paaji-2-v20-latin-600.svg#BalooPaaji2") format("svg"); /* Legacy iOS */
+}
+/* baloo-paaji-2-700 - latin */
+@font-face {
+  font-family: "Baloo Paaji 2";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/baloo-paaji-2-v20-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/baloo-paaji-2-v20-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/baloo-paaji-2-v20-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/baloo-paaji-2-v20-latin-700.svg#BalooPaaji2") format("svg"); /* Legacy iOS */
+}
+/* baloo-paaji-2-800 - latin */
+@font-face {
+  font-family: "Baloo Paaji 2";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/baloo-paaji-2-v20-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/baloo-paaji-2-v20-latin-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/baloo-paaji-2-v20-latin-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/baloo-paaji-2-v20-latin-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/baloo-paaji-2-v20-latin-800.svg#BalooPaaji2") format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --background-color: linear-gradient(90deg, #e66465, #9198e5);
+  --primary-color: lightblue;
+  --secondary-color: lightcyan;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Paaji";
+}
+
+body {
+  background: var(--background-color);
+  min-height: 100%;
+  margin-bottom: 100px;
+}
+
+header {
+  text-align: center;
+  background-color: lightblue;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main {
+  overflow-y: auto;
+}
+
+h1 {
+  margin: 0 auto;
+  width: 50%;
+  text-decoration: solid var(--secondary-color) underline;
+  text-underline-offset: 10px;
+}
+
+h2 {
+  padding: 5% 5%;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.personal-information__profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.personal-information__usericon {
+  height: 6em;
+  width: 50%;
+}
+
+.about-me {
+  border-left: double 4px black;
+  border-bottom: double 4px black;
+  padding: 10px;
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about-me__headline {
+  padding-bottom: 15px;
+  text-decoration: underline 3px;
+  text-decoration-color: var(--primary-color);
+  text-underline-offset: 3px;
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__created-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 20px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  align-items: center;
+  width: 150px;
+}
+
+.counter__bookmarks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 20px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  align-items: center;
+  width: 150px;
+}
+
+.settings {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+img {
+  height: 2em;
+}
+
+.navbar img {
+  height: 1.5em;
+}
+
+.settings__image {
+  height: 2em;
+  margin: 0 auto;
+  height: 34px;
+  padding-left: 80px;
+}
