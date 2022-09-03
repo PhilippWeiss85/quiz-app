@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  background: var(--primary-color);
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 3px solid black;
+  height: 80px;
+  padding: 15px;
+  z-index: 20;
+  border-spacing: revert;
+}
+
+.navbar__item {
+  padding: 25px 40px;
+}
+
+.navbar__item:hover {
+  background: var(--background-color);
+  border-radius: 10px;
+}
+
+.navbar__item--active {
+  background: var(--background-color);
+  border-radius: 10px;
+}

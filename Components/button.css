@@ -1,0 +1,17 @@
+button {
+  padding: 2% 5%;
+  margin: 5% 5% 10% 5%;
+  border: none;
+  background-color: lightcyan;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: lightblue;
+  border: none;
+}
+
+button:active {
+  background-color: darkcyan;
+  box-shadow: 0.3em 0.2em lightblue;
+}
