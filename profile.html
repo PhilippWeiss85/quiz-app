@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles.css" rel="stylesheet" />
     <title>Quapp - Profile</title>
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quapp</h1>
       <p>Your CSS Quiz App</p>
@@ -25,7 +26,7 @@
       </section>
       <section class="about-me">
         <h3 class="about-me__headline">About me</h3>
-        <article>
+        <article class="about-me__text">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -65,7 +66,11 @@
       <section class="darkmode">
         <h4>Light/Dark Mode</h4>
         <label aria-label="switch-button" class="darkmode-switch">
-          <input type="checkbox" class="darkmode-switch__checkbox" />
+          <input
+            type="checkbox"
+            class="darkmode-switch__checkbox"
+            data-js="darkmode-switch"
+          />
           <span class="darkmode-switch__slider"></span>
         </label>
       </section>
@@ -77,6 +82,9 @@
         /></a>
         <a href="/bookmarks.html" class="navbar__item"
           ><img src="/Images/bookmark.svg" alt="Bookmarks"
+        /></a>
+        <a href="/form.html" class="navbar__item"
+          ><img src="/Images/square-plus-regular.svg" alt="Form"
         /></a>
         <a href="/profile.html" class="navbar__item navbar__item--active"
           ><img src="/Images/user.svg" alt="Profile"

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <script type="module" src="./form.js" defer></script>
+    <title>Quapp - Your WebDev Quizapp!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quapp</h1>
+      <p>Your CSS Quiz App</p>
+    </header>
+    <main>
+      <section>
+        <form data-js="card">
+          <label>Your question</label>
+          <textarea
+            data-js="formquestion-js"
+            class="forminput forminput__question"
+            id="formquestion"
+            name="formquestion"
+            maxlength="150"
+          ></textarea>
+          <article
+            class="formquestion-counter"
+            data-js="formquestion-counter-js"
+          ></article>
+          <label>Your answer</label>
+          <textarea
+            data-js="formanswer-js"
+            class="forminput forminput__answer"
+            id="formanswer"
+            name="formanswer"
+            maxlength="150"
+          ></textarea>
+          <article class="formanswer-counter" data-js="formanswer-counter-js"></article>
+          <label>Tag</label>
+          <input
+            data-js="formtag-js"
+            type="text"
+            class="forminput forminput__tag"
+            id="formtag"
+            name="formtag"
+            maxlength="30"
+          />
+          <article class="formtag-counter" data-js="formtag-counter-js"></article>
+          <button class="form-button" type="submit">Submit</button>
+        </form>
+      </section>
+      <section data-js="main-content"></section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a class="navbar__item" href="./index.html"
+          ><img src="/Images/house.svg" alt="Home"
+        /></a>
+        <a href="/bookmarks.html" class="navbar__item"
+          ><img src="/Images/bookmark.svg" alt="Bookmarks"
+        /></a>
+        <a href="./form.html" class="navbar__item navbar__item--active"
+          ><img src="/Images/square-plus-regular.svg" alt="Form"
+        /></a>
+        <a href="/profile.html" class="navbar__item"
+          ><img src="/Images/user.svg" alt="Profile"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>

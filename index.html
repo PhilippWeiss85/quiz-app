@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles.css" rel="stylesheet" />
-    <script src="./index.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
     <title>Quapp - Your WebDev Quizapp!</title>
   </head>
   <body>
@@ -19,9 +19,18 @@
           class="quiz-card__bookmark"
           src="/Images/bookmark.svg"
           alt="Bookmark this Question"
+          data-js="quiz-card__bookmark"
         />
         <h2>What property flips the axes in flexbox?</h2>
-        <button>Show answer</button>
+        <button data-js="showanswer-button" class="button__show-answer">
+          Show answer
+        </button>
+        <article data-js="answertext" class="article--hidden">
+          <p class="quiz-card__answer">
+            To flip the axes in a flexbox you need to you use the property
+            'flex-direction'.
+          </p>
+        </article>
         <ul class="quiz-card__list">
           <li class="quiz-card__tag">#html</li>
           <li class="quiz-card__tag">#flexbox</li>
@@ -30,6 +39,7 @@
       </section>
       <section class="quiz-card">
         <img
+          type="input"
           class="quiz-card__bookmark"
           src="/Images/bookmark-solid .svg"
           alt="Bookmark this Question"
@@ -50,6 +60,9 @@
         /></a>
         <a href="/bookmarks.html" class="navbar__item"
           ><img src="/Images/bookmark.svg" alt="Bookmarks"
+        /></a>
+        <a href="/form.html" class="navbar__item"
+          ><img src="/Images/square-plus-regular.svg" alt="Form"
         /></a>
         <a href="/profile.html" class="navbar__item"
           ><img src="/Images/user.svg" alt="Profile"
