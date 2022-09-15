@@ -1,9 +1,10 @@
 button {
   padding: 2% 5%;
-  margin: 5% 5% 10% 5%;
+  margin: 2% 5% 2% 5%;
   border: none;
   background-color: lightcyan;
   font-size: 1em;
+  transition: box-shadow 0.1s ease-out;
 }
 
 button:hover {
@@ -14,4 +15,12 @@ button:hover {
 button:active {
   background-color: darkcyan;
   box-shadow: 0.3em 0.2em lightblue;
+}
+
+.button__show-answer {
+  display: hidden;
+}
+
+.button__hide-answer {
+  display: block;
 }

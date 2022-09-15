@@ -1,0 +1,55 @@
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 75%;
+}
+
+label {
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.forminput {
+  border-radius: 10px;
+  border-style: none;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.forminput__question,
+.forminput__answer {
+  width: 75%;
+  height: 10rem;
+  font-size: 1rem;
+}
+
+.forminput__tag {
+  width: 75%;
+  font-size: 1rem;
+  margin: auto auto;
+}
+
+.form-button {
+  margin: 2rem;
+}
+
+.formquestion-counter,
+.formanswer-counter {
+  background-color: green;
+  width: 75%;
+  height: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  min-width: 10rem;
+}
+
+.formtag-counter {
+  background-color: green;
+  width: 75%;
+  height: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  min-width: 10rem;
+}

@@ -1,0 +1,63 @@
+.quiz-card {
+  border: solid 1px var(--primary-color);
+  margin: 5% auto;
+  width: 75%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; */
+  padding-bottom: 2%;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.quiz-card__bookmark {
+  position: relative;
+  left: 40%;
+  top: -0.7em;
+  z-index: 10;
+  transition: 0.2s ease;
+}
+
+.quiz-card__bookmark--solid {
+  cursor: pointer;
+  content: url(/Images/bookmark-solid\ .svg);
+  box-shadow: -4px -6px var(--third-color);
+}
+
+.quiz-card__bookmark:hover {
+  cursor: pointer;
+}
+
+.article--hidden {
+  display: none;
+  margin: 0 auto;
+}
+
+.article--show {
+  display: block;
+}
+
+.quiz-card__answer {
+  border-radius: 10px;
+  border: 0.3rem dotted var(--third-color);
+}
+
+.quiz-card__list {
+  list-style: none;
+  display: flex;
+  padding: 2rem 3rem;
+  gap: 10%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quiz-card__tag {
+  background-color: var(--tag-color);
+  border-radius: 1em;
+  padding: 0.52em;
+  opacity: 0.7;
+  max-width: fit-content;
+}
